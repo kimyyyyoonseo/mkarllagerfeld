@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Mobile Web Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        @media only screen and (max-width: 1000px) {
+        }
+
+        section {
+            width: 600px;
+            height: 1280px;
+            background-color: #272727;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+#main-icon {
+    width: 600px;
+    height: 1280px;
+}
+
+#menu-icon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 60px;
+    right: 350px;
+}
+
+    </style>
+</head>
+<body>
+    <section>
+        <nav>
+        </nav>
+            <div id="icon-container" onclick="redirectToOtherPage()">
+                <img id="main-icon" src="img/m_main.png" alt="main mobile" width="590" height="1200">
+                <img id="menu-icon" src="img/menu.png" alt="menu" width="30" height="30">
+            </div>
+    </section>
+
+    
+
+    <script>
+        function redirectToOtherPage() {
+    var targetPage = 'm_menu.html';
+    window.location.href = targetPage;
+}
+function Mobile(){
+return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);}
+if (Mobile()){
+} else {
+location.href="https://kimyyyyoonseo.github.io/karllagerfeld/";
+}
+    </script>
+</body>
+</html>
